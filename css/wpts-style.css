@@ -1,0 +1,172 @@
+body.wpts-portfolio-single .site-inner,
+body.wpts-portfolio-archive .site-inner {
+	margin-bottom: 40px;
+}
+
+
+/* Single Page */
+.portfolio-feedback {
+	background-color: #fafafa;
+	border: 1px solid #eee;
+}
+
+.portfolio-feedback blockquote {
+	margin: 30px 30px 0 40px;
+}
+
+
+
+.portfolio-feedback blockquote > p {
+	margin-bottom: 0;
+}
+
+
+.portfolio-feedback footer {
+	text-align: right;
+	padding: 20px 30px;
+	font-weight: 700;
+}
+
+
+
+/* Archive Page */
+.wpts-portfolio-archive .content .entry {
+	float: left;
+	margin-left: 2.564102564102564%;
+	margin-bottom:2.564102564102564%;
+	width: 31.623931623931625%;
+	background-color:  #4a5763;
+	padding:  20px;
+	-webkit-transition: all .3s;
+	   -moz-transition: all .3s;
+	    -ms-transition: all .3s;
+	     -o-transition: all .3s;
+	        transition: all .3s;	
+}
+
+
+
+.wpts-portfolio-archive .content .entry .entry-title,
+.wpts-portfolio-archive .content .entry .entry-title a {
+	color:  #fff;
+	text-align:  center;
+	margin: 0;
+	font-size: 18px;
+	font-weight: 400;
+	font-family: 'Work Sans', sans-serif;
+}
+
+
+
+.wpts-portfolio-archive .content .entry img {
+	border-radius:  6px;
+	overflow:  hidden;
+	display:  block;
+	margin-bottom: 12px;
+}
+
+
+.wpts-portfolio-archive .content .entry:hover {
+	-webkit-transform: scale(1.1);
+	   -moz-transform: scale(1.1);
+	    -ms-transform: scale(1.1);
+	     -o-transform: scale(1.1);
+	        transform: scale(1.1);
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.wpts-portfolio-archive .content .entry:nth-of-type(3n+1) {
+	margin-left:  0;
+	clear:  left;
+}
+
+
+
+.wpts-portfolio-archive .archive-description {
+	margin-bottom: 50px;
+}
+
+
+
+.wpts-portfolio-archive .archive-description h1 {
+	/*font-size:  50px;*/
+}
+
+
+/* Short Code */
+.wpts-list {
+	display: grid;
+	  grid-template-columns: 1fr 1fr 1fr;
+	  grid-gap: 20px;
+}
+
+.wpts-list .inner {
+	position: relative;
+	overflow: hidden;
+
+}
+
+.wpts-list .inner .title {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	bottom: -100%;
+	background-color: rgb(74, 87, 99);
+  	opacity: 0.9;
+	text-align: center;
+	padding: 30px;
+	-webkit-transition: all .3s;
+	   -moz-transition: all .3s;
+	    -ms-transition: all .3s;
+	     -o-transition: all .3s;
+	        transition: all .3s;
+}
+.wpts-list .inner:hover .title {
+	bottom: 0;
+}
+.wpts-list .inner .title h4 {
+    position: relative;
+    top: 50%;
+  	transform: translateY(-50%);
+  	color: #fff;
+  	font-size: 20px;
+}
+
+@media only screen and ( min-width: 640px ) {
+	.portfolio-inner {
+		display: grid;
+		grid-template-columns: 50% auto;
+	}
+}
+
+
+@media only screen and (max-width: 1200px) {
+	.wpts-portfolio-archive .content .entry {
+		width: 48.717948717948715%;
+	}
+
+	.wpts-portfolio-archive .content .entry:nth-of-type(3n+1) {
+		clear: none;
+		margin-left: 2.564102564102564%;
+	}
+
+	.wpts-portfolio-archive .content .entry:nth-of-type(2n+1) {
+		clear:  left;
+		margin-left: 0;
+	}
+}
+
+
+
+@media only screen and (max-width: 860px) {
+	.wpts-portfolio-archive .content .entry,
+	.wpts-portfolio-archive .content .entry:nth-of-type(3n+1),
+	.wpts-portfolio-archive .content .entry:nth-of-type(2n+1) {
+		width: 100%;
+		margin-left: 0;
+		clear:  both;
+		float:  none;
+	}
+}
